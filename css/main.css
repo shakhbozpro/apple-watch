@@ -4,17 +4,17 @@
    font-style: normal;
    font-weight: 400;
    src: url('../fonts/roboto-v30-latin_cyrillic-regular.woff2') format('woff2'),
-        url('../fonts/roboto-v30-latin_cyrillic-regular.woff') format('woff');
- }
+   url('../fonts/roboto-v30-latin_cyrillic-regular.woff') format('woff');
+}
 
- @font-face {
+@font-face {
    font-family: 'Roboto';
    font-display: swap;
    font-style: normal;
    font-weight: 700;
    src: url('../fonts/roboto-v30-latin_cyrillic-700.woff2') format('woff2'),
-        url('../fonts/roboto-v30-latin_cyrillic-700.woff') format('woff');
- }
+   url('../fonts/roboto-v30-latin_cyrillic-700.woff') format('woff');
+}
 
 html {
    scroll-behavior: smooth;
@@ -29,6 +29,12 @@ body {
    padding: 0;
    font-size: 16px;
    font-family: "Roboto", "Arial", sans-serif;
+}
+
+:root {
+   --c333: #333333;
+   --c777: #777777;
+   --c666: #666666;
 }
 
 img {
@@ -60,6 +66,307 @@ ul, ol {
    list-style-type: none;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
    margin: 0;
 }
+
+.link {
+   display: inline-block;
+   padding: 12px 38px;
+   color: #fff;
+   font-weight: 700;
+   font-size: 18px;
+   line-height: 150%;
+   background-color: #EA625C;
+   text-decoration: none;
+   transition: all 0.2s ease;
+}
+
+.link:hover {
+   background-color: #C9514C;
+}
+
+/* Site header start */
+
+.header {
+   padding-top: 36px;
+   padding-bottom: 79px;
+   background-color: #fff;
+}
+
+.header-inner {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.header-logo {
+   
+}
+
+.header-logo-img {
+   
+}
+
+.header-links-wrapper {
+   display: flex;
+   align-items: center;
+}
+
+.header__nav {
+   margin-right: 40px;
+}
+
+.header__list {
+   display: flex;
+   align-items: center;
+}
+
+.header__item {
+   
+}
+
+.header__item:not(:last-child) {
+   margin-right: 30px;
+}
+
+.header-link {
+   font-size: 15px;
+   line-height: 150%;
+   text-align: center;
+   color: var(--c333);
+   text-decoration: none;
+   transition: all 0.3s ease;
+}
+
+.header-link:hover {
+   border-bottom: 3px solid var(--c333);
+   padding-bottom: 6px;
+}
+
+.header-form {
+   
+}
+
+.header-form-search {
+   border: none;
+   border-bottom: 1px solid var(--c333);
+   padding-bottom: 6px;
+   width: 173px;
+   padding: 5px;
+}
+
+.header-form-search::placeholder {
+   font-size: 15px;
+   line-height: 150%;
+   text-align: center;
+   color: var(--c666);
+}
+
+/* Site header end */
+
+
+/* Site main start */
+/* Site hero start */
+
+.main {
+   
+}
+
+.hero {
+   padding-bottom: 183px;
+   background-image: url("../images/apple-watch.png");
+   background-repeat: no-repeat;
+   background-size: contain;
+   background-position: calc(50% + 535px);
+   border-bottom: 2px solid #DDDDDD;
+}
+
+.hero-inner {
+   
+}
+
+.hero-text-wrapper {
+   width: 462px;
+   padding-top: 91px;
+}
+
+.hero-heading {
+   font-size: 50px;
+   line-height: 120%;
+   margin-bottom: 30px;
+}
+
+.hero-text {
+   line-height: 150%;
+   color: var(--c777);
+   margin-bottom: 30px;
+   padding-left: 40px;
+   border-left: 3px solid #888888;
+}
+
+.hero-link {
+   
+}
+
+/* Site hero end */
+
+/* Site about start */
+
+.about {
+   padding-top: 70px;
+   padding-bottom: 70px;
+}
+
+.about-inner {
+   
+}
+
+.about-list {
+   display: flex;
+   justify-content: space-between;
+}
+
+.about-item {
+   width: 280px;
+}
+
+.about-item-heading {
+   font-size: 18px;
+   line-height: 150%;
+   text-transform: uppercase;
+   color: #222222;
+   margin-bottom: 30px;
+}
+
+.about-item-text {
+   font-size: 15px;
+   line-height: 160%;
+   color: var(--c333);
+   margin-bottom: 20px;
+}
+
+.about-item-dots {
+   display: flex;
+   align-items: center;
+}
+
+.about-dot {
+   width: 8px;
+   height: 8px;
+   background-color: #DDDDDD;
+}
+
+.about-dot:nth-child(2) {
+   margin-left: 10px;
+   margin-right: 10px;
+}
+
+.about-item-link {
+   position: relative;
+   font-weight: 700;
+   line-height: 160%;
+   text-transform: uppercase;
+   color: #EA625C;
+   text-decoration: none;
+   padding-left: 50px;
+   transition: all 0.3s ease;
+}
+
+.about-item-link::before {
+   position: absolute;
+   top: 8px;
+   left: 0;
+   content: "";
+   width: 40px;
+   height: 3px;
+   background-color: #EA625C;
+   transition: all 0.3s ease;
+}
+
+.about-item-link:hover::before {
+   width: 60px;
+}
+
+.about-item-link:hover {
+   padding-left: 70px;
+}
+
+/* Site about end */
+
+/* Site offers start */
+
+.offers {
+   padding-top: 70px;
+   padding-bottom: 70px;
+}
+
+.offers-inner {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.offers-text-wrapper {
+   width: 454px;
+}
+
+.offers-heading {
+   font-size: 50px;
+   line-height: 120%;
+   margin-bottom: 30px;
+}
+
+.offers-text {
+   line-height: 150%;
+   color: var(--c777);
+   margin-bottom: 30px;
+   padding-left: 40px;
+   border-left: 3px solid #888888;
+}
+
+.offers-link {
+   padding: 12px 90px;
+}
+
+/* Site offers end */
+
+/* Site services start */
+
+.services {
+   background-image: url("../images/runners.jpg");
+   background-attachment: fixed;
+}
+
+.services-inner {
+   padding-top: 240px;
+   padding-bottom: 240px;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-end;
+}
+
+.services-text-wrapper {
+   width: 452px;
+}
+
+.services-heading {
+   font-size: 50px;
+   line-height: 120%;
+   color: #FFFFFF;
+   margin-bottom: 30px;
+}
+
+.services-text {
+   line-height: 150%;
+   color: #FFFFFF;
+   margin-bottom: 30px;
+}
+
+/* Site services end */
